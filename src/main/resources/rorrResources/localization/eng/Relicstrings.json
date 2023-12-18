@@ -1,0 +1,30 @@
+{
+  "${ModID}:FireShoe": {
+    "NAME": "Fireman's Boots",
+    "FLAVOR": "Fight fire with fire...",
+    "DESCRIPTIONS": [
+      "At the start of your turn, apply #b"," #yBurning to a random enemy."
+    ]
+  },
+  "${ModID}:RustyJetpack": {
+    "NAME": "Rusty Jetpack",
+    "FLAVOR": "Make sure to keep the kiddos away from the bottom.",
+    "DESCRIPTIONS": [
+      "When you play #b"," Attacks in a row, gain #b"," #yEnergy and draw #b"," card."
+    ]
+  },
+  "${ModID}:EnergyCell": {
+    "NAME": "Energy Cell",
+    "FLAVOR": "Use ONLY in fusion based vehicles and machinery.",
+    "DESCRIPTIONS": [
+      "When below half HP, gain #b"," #yMax #yEnergy."
+    ]
+  },
+  "${ModID}:TodoItem": {
+    "NAME": "Todo Item",
+    "FLAVOR": "TODO: make this a sweet relic.",
+    "DESCRIPTIONS": [
+      "Has no effect."
+    ]
+  }
+}

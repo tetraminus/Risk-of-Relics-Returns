@@ -26,7 +26,7 @@ import java.util.function.Consumer;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
-import static code.ModFile.makeID;
+import static code.RiskOfRelicsReturns.makeID;
 
 public class Wiz {
     //The wonderful Wizard of Oz allows access to most easy compilations of data, or functions.
@@ -105,6 +105,10 @@ public class Wiz {
 
     public static boolean isInCombat() {
         return CardCrawlGame.isInARun() && AbstractDungeon.currMapNode != null && AbstractDungeon.getCurrRoom() != null && AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT;
+    }
+
+    public static AbstractRoom gcr() {
+        return AbstractDungeon.getCurrRoom();
     }
 
     public static void atb(AbstractGameAction action) {
