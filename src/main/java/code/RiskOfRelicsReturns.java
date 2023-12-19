@@ -95,7 +95,11 @@ public class RiskOfRelicsReturns implements
                 .packageFilter(AbstractEasyRelic.class)
                 .any(AbstractEasyRelic.class, (info, relic) -> {
                     if (relic.color == null) {
-                        BaseMod.addRelic(relic, RelicType.SHARED);
+                        if (relic.relicType != null)
+                            BaseMod.addRelic(relic, relic.relicType);
+                        else
+                            BaseMod.addRelic(relic, RelicType.SHARED);
+
                     } else {
                         BaseMod.addRelicToCustomPool(relic, relic.color);
                     }
@@ -113,6 +117,7 @@ public class RiskOfRelicsReturns implements
                 BaseMod.addDynamicVariable(var));
         new AutoAdd(modID)
                 .packageFilter(AbstractEasyCard.class)
+                .notPackageFilter("code.cards.democards")
                 .setDefaultSeen(true)
                 .cards();
     }

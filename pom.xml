@@ -4,8 +4,8 @@
     <groupId>us.tetramin</groupId>
 
     <artifactId>RiskOfRelicsReturns</artifactId>
-    <version>0.0.1</version>
-    <name>Risk of Relics Returns</name>
+    <version>1.0.0</version>
+    <name>Risk of Relics: Returns</name>
     <description>Extension mod for Risk Of Relics adding mechanics and items from ROR1/RORR</description>
     <!-- Change the above for mod information. -->
 

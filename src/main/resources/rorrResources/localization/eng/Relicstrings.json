@@ -1,4 +1,11 @@
 {
+  "${ModID}:DeadMansFoot": {
+    "NAME": "Dead Man's Foot",
+    "FLAVOR": "Poor guy...",
+    "DESCRIPTIONS": [
+      "Every #b"," times you are attacked, apply #b"," #yPoison to the attacker."
+    ]
+  },
   "${ModID}:FireShoe": {
     "NAME": "Fireman's Boots",
     "FLAVOR": "Fight fire with fire...",
